@@ -1,5 +1,7 @@
 sudo: false
 language: go
+go:
+    - "1.10.3"
 git:
     depth: 1
 before_script:
@@ -9,7 +11,7 @@ before_script:
     - mage vendor
     - mage install
 script:
-    ‐ hugo
+    - hugo
 deploy:
     provider: pages
     skip_cleanup: true
