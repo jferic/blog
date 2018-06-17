@@ -4,12 +4,7 @@ go:
     - "1.10.3"
 git:
     depth: 1
-before_script:
-    - go get github.com/magefile/mage
-    - go get -d github.com/gohugoio/hugo
-    - cd ${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo
-    - mage vendor
-    - mage install
+install: go get -v github.com/gohugoio/hugo
 script:
     - hugo
 deploy:
