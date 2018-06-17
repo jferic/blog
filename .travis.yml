@@ -15,7 +15,6 @@ deploy:
         branch: master
     local_dir: public
     repo: jferic/jferic.github.io
-    fqdn: jferic.com
     target_branch: master
     email: jferic@aliyun.com
     name: jferic
