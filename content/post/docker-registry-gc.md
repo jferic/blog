@@ -84,9 +84,9 @@ bin/registry garbage-collect [--dry-run] /path/to/config.yml
 
 确定原因是：
 
-> 我们的缓存镜像使用 latest 作为 tag，每次打包都可能生成一个新的镜像 push 到 Registry 中，这样就 overwritten tags，在 Repository 的 revisions 目录下仍然保存了历史的 digests。
+> 我们的缓存镜像使用 latest 作为 tag，每次打包都可能生成一个新的镜像 push 到 Registry 中，这样就出现 overwritten tags，但在 Repository 的 revisions 目录下仍然保存了历史的 manifests。
 >
-> 即使我们删除 latest tag 标记的镜像，但因为历史的 untagged manifest 仍然关联着 blobs，所以大量的 blobs 并没有被删除。
+> 即使我们删除 latest tag 标记的镜像，但因为历史的 untagged manifest 仍然关联着 blobs，所以大量的 blobs 并没有被 GC。
 
 使用社区的 patch 版本（Registry/2.7 将  release 该功能）
 
