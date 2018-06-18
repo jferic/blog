@@ -26,7 +26,7 @@ preview = true
 DELETE /v2/<name>/manifests/<reference>
 ```
 
-> For deletes, `reference` *must* be a digest or the delete will fail.
+> For deletes, `reference` **must be a digest** or the delete will fail.
 
 我们首先需要获取到所有待删除镜像的 Digest。
 
