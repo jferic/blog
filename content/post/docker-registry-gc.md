@@ -104,7 +104,7 @@ Registry 的物理存储包括两部分：blobs 和 repositories。其中 blobs 
 
 ![image-20180618202642208](https://terminus-jferic.oss-cn-shanghai.aliyuncs.com/image-20180618202642208.png)
 
-基本关系是 repositry -> manifest (tag)  -> layer => blob
+基本关系是 repository -> manifest (tag)  -> layer => blob
 
 一个 repository 下面包含一个或者多个 manifest，可读的 tag 与manifest 关联； 一个 manifest 文件包含一个或者多个 layer；manifest 和 layer 的数据文件都存储在 blobs 目录下，以 digest 作为子目录索引 blob 数据文件。
 
