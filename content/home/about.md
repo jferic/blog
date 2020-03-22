@@ -32,4 +32,4 @@ weight = 40
 
 现在主要从事 PaaS 平台的研发，服务于企业云计算产业。
 
-曾经参与飞天平台的研发，对分布式系统开发有较丰富的经验，熟悉 Zookeeper, Message Queue, DCOS 等生态软件。
+曾经参与阿里云飞天平台的研发，对分布式系统开发有较丰富的经验，熟悉 Zookeeper, Message Queue, Kubernetes, DCOS 等生态软件。
